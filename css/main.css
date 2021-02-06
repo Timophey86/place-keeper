@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+
+#map {
+    height: 550px;
+    width: 650px;
+    border: 1px solid black
+}
+
+.place-keeper:hover {
+    cursor: pointer;
+}
+
+.main-body {
+    background-color:lightcyan;
+    text-align: center;
+}
+
+.main-body h1 {
+    color: white;
+}
+
+.main-body h3 {
+    color: #f6f5f5;
+}
+
+.user-pref-body {
+    background-color: aliceblue;
+}
+
+.reg-form-table {
+    margin: 100px 300px
+}
+
+.back-to-main {
+    margin-top: 10px;
+    display: block
+}
+
+.user_prefs_page {
+    margin-top: 10px;
+    display: block;
+}
+
+.forecast {
+    color: blanchedalmond;
+    height: 200px;
+    width: 300px;
+    display: none;
+}
+
+.curr-loc-header{
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-right: 10px;
+}
+
+.place-keeper {
+    display: block;
+    height: 30px;
+    width: 30px;
+}
+
+.marked-places th{
+    border: 1px solid black;
+    width: 70px;
+    height: 30px;
+}
+
+.marked-places td{
+    border: 1px solid black;
+    width: 70px;
+    height: 30px;
+}
+
+.delete {
+    text-align: center;
+}
+
+.delete:hover {
+    cursor: pointer;
+}
+
+.place-name:hover {
+    cursor: pointer;
+}
