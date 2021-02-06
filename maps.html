@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Google Maps Api</title>
+  </head>
+  <body>
+    <h1>My Google Maps</h1>
+
+    <div id="map"></div>
+    <h3 class="curr-loc-header">Press to get currnent location:</h3>
+    <img class="place-keeper" src="place-keeper.png" alt="" />
+    <h2>Current Position:</h2>
+    <table>
+      <tr>
+        <td>Latitude</td>
+        <td id="latitude"></td>
+      </tr>
+      <tr>
+        <td>Longitude</td>
+        <td id="longitude"></td>
+      </tr>
+      <tr>
+        <td>Accuracy</td>
+        <td id="accuracy"></td>
+      </tr>
+      <tr>
+        <td>Timestamp</td>
+        <td id="timestamp"></td>
+      </tr>
+    </table>
+    <h3>Click the map to fill in your chosen locations</h3>
+    <table class="marked-places">
+      <tr>
+        <th>Places Name</th>
+        <th>Lang</th>
+        <th>Lat</th>
+        <th>Action</th>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="delete">Delete</td>
+      </tr>
+    </table>
+    <a href="index.html" class="back-to-main">Back</a>
+    <script src="js/storage_service.js"></script>
+    <script src="js/util_service.js"></script>
+    <script src="js/userPref_service.js"></script>
+    <script src="js/place_service.js"></script>
+    <script src="js/controller.js"></script>
+    <script
+      async
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzmxFNdgIsDvJcfshDzu47wGLhuN20Pvg&callback=initMap"
+    ></script>
+  </body>
+</html>

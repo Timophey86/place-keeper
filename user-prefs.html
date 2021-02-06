@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    
+    <title>User Prefeernces</title>
+  </head>
+  <body class="user-pref-body">
+    <div class="reg-form-table">
+      <form id="frmRegister">
+        <table>
+          <tr>
+            <td><label for="name">Name:</label></td>
+            <td>
+              <input
+                type="text"
+                id="name"
+                name="fullName"
+                placeholder="First and last name"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="email">E-mail:</label></td>
+            <td><input type="email" name="email" required/></td>
+          </tr>
+          <tr>
+            <td><label for="dob">Age:</label></td>
+            <td><input type="range" id="age" name="age" min="18" max="120" value="26"
+                    onchange="showAge(this.value);" />
+                <span id="sAge">26</span>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="dob">Date of Birth:</label></td>
+            <td><input type="date" id="dob" name="dob" required/></td>
+          </tr>
+          <tr>
+            <td><label for="tob">Time of birth:</label></td>
+            <td><input type="time" id="tob" name="tob" /></td>
+          </tr>
+          <tr>
+            <td><label for="color">Favourite Color:</label></td>
+              <td><input type="color" id="color" name="color" form="frmRegister" value="#ff0000" /></td>
+          </tr>
+        </table>
+        <input type="submit" value="Submit" onclick="onSubmit(event)"/>
+        <a href="index.html" class="back-to-main">Back</a>
+      </form>
+    </div>
+
+    <script src="js/storage_service.js"></script>
+    <script src="js/util_service.js"></script>
+    <script src="js/userPref_service.js"></script>
+    <script src="js/place_service.js"></script>
+    <script src="js/controller.js"></script>
+  </body>
+</html>
